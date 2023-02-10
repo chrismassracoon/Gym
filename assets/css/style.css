@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Marcellus+SC:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Audiowide&display=swap);
+body {
+  font-family: "Open Sans";
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  background-image: url("/source/img/main_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(89.22deg, rgba(0, 0, 0, 0.51) 36.75%, rgba(217, 217, 217, 0) 66.99%);
+}
+.main .header__link {
+  border-radius: 0;
+  border: none;
+  background-color: #d9d9d9;
+  transition: 0.5s;
+  margin-left: 30px;
+}
+.main .header__link:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+.main .header__link__items {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-style: normal;
+  color: #ae0f0f;
+  font-weight: 600;
+  font-size: 14px;
+  height: 40px;
+  width: 135px;
+  justify-content: center;
+  gap: 15px;
+}
+.main .header__link__items .header__link__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ae0f0f;
+  padding: 5px 8px;
+}
+
+.main__content {
+  position: relative;
+  color: white;
+  width: 900px;
+  margin: 0 auto;
+}
+.main__content .header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__logo {
+  font-family: "Marcellus SC";
+  font-size: 26px;
+  display: flex;
+  gap: 5px;
+  transition: 0.5s;
+}
+.header__logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.header__menu {
+  font-size: 16px;
+  display: flex;
+  gap: 50px;
+}
+.header__menu li {
+  position: relative;
+  list-style-type: none;
+}
+.header__menu li:hover {
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.redlinein::before {
+  animation: lianimationin;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  content: "";
+  position: absolute;
+  background: #ae0f0f;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+}
+
+.redlineoff::before {
+  animation: lianimationout;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  content: "";
+  position: absolute;
+  background: #ae0f0f;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+}
+
+@keyframes lianimationin {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes lianimationout {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+.main__content__body {
+  margin-top: 250px;
+  padding-bottom: 250px;
+  width: 505px;
+}
+.main__content__body h1 {
+  font-family: "Audiowide";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+}
+.main__content__body p {
+  color: #cdcdcd;
+  font-style: normal;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 50px;
+  line-height: 26px;
+}
+.main__content__body button {
+  background: #ae0f0f;
+  height: 40px;
+  border-radius: 0;
+  width: 140px;
+  font-family: "Open Sans";
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.5s;
+}
+.main__content__body button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
