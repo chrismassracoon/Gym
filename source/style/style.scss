@@ -13,7 +13,7 @@ body {
 .main {
   position: relative;
   width: 100%;
-  background-image: url('/source/img/main_background.png');
+  background-image: url('../img/main_background.png');
   background-repeat: no-repeat;
   background-size: cover;
   &::before {
