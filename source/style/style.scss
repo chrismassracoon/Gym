@@ -182,3 +182,69 @@ body {
     }
   }
 }
+
+.about {
+  &_gymat {
+    padding-top: 120px;
+  }
+
+  &_gymat {
+  }
+}
+.about_gymat {
+  &__img {
+  }
+
+  &__logo {
+    width: 221px;
+    background-image: url('/assets/img/about__gymat__logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    p {
+      padding-bottom: 10px;
+    }
+  }
+
+  &_container {
+    width: 1111px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+  }
+  &__content {
+  }
+
+  &__title {
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+  }
+
+  &__text {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #9e9e9e;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    &_item {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
